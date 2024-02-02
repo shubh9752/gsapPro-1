@@ -1,45 +1,26 @@
-// gsap.to(".box",{
-//     x:1200,
-//     y:200,
-   
-//     backgroundColor:"green",
-//     duration:2,
-//     delay:1,
-//     rotate:360
-// })
+var tl=gsap.timeline();
 
-//move final to initial
-// gsap.from(".box",{
-//     x:1200,
-//     y:200,
-   
-//     backgroundColor:"green",
-//     duration:2,
-//     delay:1,
-//     rotate:360
-// })
-var tl=gsap.timeline()
-tl.to(".box1",{
-    x:900,
-    rotate:360,
-    delay:1,
-    // repeat:"loop",
-    duration:2
-    
+tl.from("nav h3",{
+    y:-55,
+    opacity:0,
+    duration:1,
+    delay:0.6,
+    stagger:0.5
+
 })
-tl.to(".box2",{
-    x:900,
-    rotate:360,
-    delay:1,
-    // repeat:"loop",
-    duration:3
-    
+gsap.from("main h1",{
+    x:-55,
+    opacity:0,
+    duration:0.5,
+    delay:0.6,
+    stagger:0.5
+
 })
-tl.to(".box3",{
-    x:900,
-    rotate:360,
-    delay:1,
-    // repeat:"loop",
-    duration:4
-    
+tl.from("img",{
+    x:-900,
+    rotate:395,
+    opacity:1,
+    duration:2,
+    stagger:0.7
 })
+
